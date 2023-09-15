@@ -1,0 +1,10 @@
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Library.csproj.AssemblyReference.cache
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Styles\TextBlock.baml
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Styles\_FontSizes.baml
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Styles\_Thickness.baml
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\App.g.cs
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Library_MarkupCompile.cache
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Library_MarkupCompile.lref
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Views\Books.g.cs
+D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Styles\MetroWindow.baml
