@@ -19,6 +19,9 @@
     <Compile Update="Windows\NewReaderWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\NewRentalWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\NewTitleWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\NewReaderWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\NewRentalWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\NewTitleWindow.xaml">

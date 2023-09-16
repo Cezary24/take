@@ -1,4 +1,8 @@
-﻿using Library.Windows.Interfaces;
+﻿using Library.Core.Models.Reader;
+using Library.Core.Models.Title;
+using Library.Services.Interfaces;
+using Library.Services.Web;
+using Library.Windows.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,16 +23,46 @@ namespace Library.Windows
     /// <summary>
     /// Interaction logic for NewTitleWindow.xaml
     /// </summary>
-    public partial class NewTitleWindow : Page, ITitleWindow
+    public partial class NewTitleWindow : Window, ITitleWindow
     {
-        public NewTitleWindow()
+
+        private NewTitleDto title;
+
+        private readonly ITitleService titleService;
+
+        public NewTitleWindow(ITitleService titleService)
         {
+            this.titleService = titleService;
             InitializeComponent();
         }
 
-        public bool? ShowDialog()
+        private void TxtName_TextChanged(object sender, TextChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            SetButtonEnabled();
+        }
+
+        private async void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+            await titleService.AddTitleAsync(title);
+            CleanControls();
+            Hide();
+        }
+
+        private void BtnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            CleanControls();
+            Hide();
+        }
+
+        private void CleanControls()
+        {
+            TxtName.Text = "";
+        }
+
+        private void SetButtonEnabled()
+        {
+            if (!string.IsNullOrEmpty(TxtName.Text))
+                BtnSave.IsEnabled = true;
         }
     }
 }

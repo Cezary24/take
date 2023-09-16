@@ -44,7 +44,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Publ. Date" Margin="10,0,10,0" HorizontalAlignment="Right" />
-                <TextBox x:Name="TxtPublicationDate" Grid.Column="1" Margin="0,0,20,0" Text="{Binding PublicationDate}" TextChanged="TxtPublicationDate_TextChanged" />
+                <DatePicker x:Name="TxtPublicationDate" Grid.Column="1" Margin="0,0,20,0" Text="{Binding PublicationDate}" SelectedDateChanged="TxtPublicationDate_TextChanged" />
             </Grid>
 
             <Grid Grid.Row="2" Margin="0,10,0,0">
@@ -54,7 +54,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Publ. House" Margin="10,0,10,0" HorizontalAlignment="Right" />
-                <TextBox x:Name="TxtPublishingHouse" Grid.Column="1" Margin="0,0,20,0" Text="{Binding PublishingHouse}" TextChanged="TxtPublishingHouse_TextChanged" />
+                <DatePicker x:Name="TxtPublishingHouse" Grid.Column="1" Margin="0,0,20,0" Text="{Binding PublishingHouse}" SelectedDateChanged="TxtPublishingHouse_TextChanged" />
             </Grid>
 
 
@@ -63,10 +63,12 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100" SharedSizeGroup="Label" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Title" Margin="10,0,10,0" HorizontalAlignment="Right" />
-                <TextBox x:Name="TxtTitle" Grid.Column="1" Margin="0,0,20,0" Text="{Binding Title}" TextChanged="TxtDescription_TextChanged" />
+                <ComboBox Grid.Column="1" x:Name="TxtTitle"  Margin="0,0,5,0" Text="{Binding Title}" SelectionChanged="Title_SelectionChanged" />
+                <Label Grid.Column="2" Name="LblNewCompany" Cursor="Hand" FontWeight="SemiBold" Foreground="Green" Content="New" Margin="0,0,20,0" MouseLeftButtonDown="LblNewTitle_MouseLeftButtonDown" />
             </Grid>
 
         </Grid>

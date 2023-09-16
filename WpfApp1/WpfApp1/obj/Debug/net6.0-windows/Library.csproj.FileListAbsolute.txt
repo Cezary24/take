@@ -89,3 +89,5 @@ D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Views\Sh
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Views\ShellWindow.baml
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\App.baml
+D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\NewRentalWindow.g.cs
+D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\NewRentalWindow.baml

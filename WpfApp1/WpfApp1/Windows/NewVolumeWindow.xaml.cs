@@ -37,12 +37,14 @@ namespace Library.Windows
         private readonly IVolumeService volumeService;
         private readonly ITitleService titleService;
         private readonly IRentalService rentalService;
+        private readonly ITitleWindow titleWindow;
 
-        public NewVolumeWindow(IVolumeService volumeService, ITitleService titleService, IRentalService rentalService)
+        public NewVolumeWindow(IVolumeService volumeService, ITitleService titleService, IRentalService rentalService, ITitleWindow titleWindow)
         {
             this.volumeService = volumeService;
             this.titleService = titleService;
             this.rentalService = rentalService;
+            this.titleWindow = titleWindow;
             InitializeComponent();
             volume = new NewVolumeDto();
             DataContext = volume;
@@ -54,30 +56,30 @@ namespace Library.Windows
             SetButtonEnabled();
         }
 
-        private void TxtPublicationDate_TextChanged(object sender, TextChangedEventArgs e)
+        private void TxtPublicationDate_TextChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             SetButtonEnabled();
         }
 
 
-        private void TxtPublishingHouse_TextChanged(object sender, TextChangedEventArgs e)
+        private void TxtPublishingHouse_TextChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             SetButtonEnabled();
         }
 
-        private void TxtDescription_TextChanged(object sender, TextChangedEventArgs e)
+        private void Title_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             SetButtonEnabled();
         }
 
-        private void LblNewRental_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void LblNewTitle_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            titleWindow.ShowDialog();
         }
 
         private void SetButtonEnabled()
         {
-            if (!string.IsNullOrEmpty(TxtTitle.Text) && !string.IsNullOrEmpty(TxtAuthor.Text) && !string.IsNullOrEmpty(TxtPublishingHouse.Text) && !string.IsNullOrEmpty(TxtPublicationDate.Text))
+            if (!string.IsNullOrEmpty(TxtTitle.Text) && !string.IsNullOrEmpty(TxtAuthor.Text) && TxtPublishingHouse.SelectedDate.HasValue && TxtPublicationDate.SelectedDate.HasValue)
                 BtnSave.IsEnabled = true;
         }
 

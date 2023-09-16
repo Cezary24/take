@@ -90,7 +90,7 @@ namespace WpfApp1
 
             //Windows
             services.AddTransient<IReaderWindow, NewReaderWindow>();
-          //  services.AddTransient<IRentalWindow, NewRentalWindow>();
+           services.AddTransient<IRentalWindow, NewRentalWindow>();
             services.AddTransient<ITitleWindow, NewTitleWindow>();
             services.AddTransient<IVolumeWindow, NewVolumeWindow>();
         }

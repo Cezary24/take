@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\App.xaml
-11-482275639
+12-1589072662
 
-451479482892
+461681346561
 2261782211702
-MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ReadersPage.xaml;Views\ShellWindow.xaml;Views\VolumesPage.xaml;Windows\NewReaderWindow.xaml;Windows\NewTitleWindow.xaml;Windows\NewVolumeWindow.xaml;
+MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ReadersPage.xaml;Views\ShellWindow.xaml;Views\VolumesPage.xaml;Windows\NewReaderWindow.xaml;Windows\NewRentalWindow.xaml;Windows\NewTitleWindow.xaml;Windows\NewVolumeWindow.xaml;
 
-False
+True
 
