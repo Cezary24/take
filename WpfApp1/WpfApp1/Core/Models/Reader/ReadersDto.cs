@@ -8,6 +8,6 @@ namespace Library.Core.Models.Reader
 {
     public class ReadersDto
     {
-        public List<ReaderDto> Readers { get; set; }
+        public List<ReaderDto> readers { get; set; }
     }
 }

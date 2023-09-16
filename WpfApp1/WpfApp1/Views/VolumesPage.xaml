@@ -57,11 +57,11 @@
                 <DataGrid x:Name="DgVolumes" AutoGenerateColumns="False" Margin="30,10,30,10" IsReadOnly="True"
                        Height="220" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"   >
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Author" Binding="{Binding Author}"/>
-                        <DataGridTextColumn Header="Publication Date " Binding="{Binding PublicationDate}"/>
-                        <DataGridTextColumn Header="Publishing House " Binding="{Binding PublishingHouse}"/>
-                        <DataGridTextColumn Header="Rentals" MinWidth="100" Binding="{Binding Rentals}"/>
-                        <DataGridTextColumn Header="Title" Binding="{Binding Title}"/>
+                        <DataGridTextColumn Header="Author" Binding="{Binding author}"/>
+                        <DataGridTextColumn Header="Publication Date " Binding="{Binding publicationDate}"/>
+                        <DataGridTextColumn Header="Publishing House " Binding="{Binding publishingHouse}"/>
+                        <DataGridTextColumn Header="Rentals" MinWidth="100" Binding="{Binding rentals}"/>
+                        <DataGridTextColumn Header="Title" Binding="{Binding title}"/>
 
                     </DataGrid.Columns>
                 </DataGrid>
@@ -70,7 +70,7 @@
             <Grid Grid.Row="2">
                 <Label HorizontalAlignment="Center" Name="LblAllStudents" />
             </Grid>
-            <Grid Grid.Row="3" HorizontalAlignment="Right">
+            <Grid Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,400,10" Grid.RowSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="Auto"/>

@@ -9,6 +9,6 @@ namespace Library.Core.Models.Rental
 {
     public class RentalsDto
     {
-        public List<RentalDto> Rentals { get; set; }
+        public List<RentalDto> rentals { get; set; }
     }
 }

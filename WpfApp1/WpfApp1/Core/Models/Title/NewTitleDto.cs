@@ -9,8 +9,8 @@ namespace Library.Core.Models.Title
 {
     public class NewTitleDto
     {
-        public String Name { get; set; }
+        public String name { get; set; }
 
-        public VolumesDto Volumes { get; set; }
+        public VolumesDto volumes { get; set; }
     }
 }

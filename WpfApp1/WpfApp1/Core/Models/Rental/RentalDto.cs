@@ -11,13 +11,13 @@ namespace Library.Core.Models.Rental
     public class RentalDto
     {
 
-        public long Id { get; set; }
-        public DateTime RentalDate { get; set; }
+        public long id { get; set; }
+        public DateTime rentalDate { get; set; }
 
-        public DateTime DeliveryDate { get; set; }
+        public DateTime deliveryDate { get; set; }
 
-        public ReaderDto Reader { get; set; }
+        public ReaderDto reader { get; set; }
 
-        public VolumeDto Volume { get; set; }
+        public VolumeDto volume { get; set; }
     }
 }

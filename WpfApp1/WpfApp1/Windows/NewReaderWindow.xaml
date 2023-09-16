@@ -26,7 +26,7 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0" Content="Name" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" />
-                <TextBox Grid.Column="1" Name="TxtName" Text="{Binding Name}" MinWidth="200" Height="10" Margin="26,10,0,10" HorizontalAlignment="Left" TextChanged="TxtName_TextChanged" />
+                <TextBox Grid.Column="1" Name="TxtName" Text="{Binding name}" MinWidth="200" Height="10" Margin="26,10,0,10" HorizontalAlignment="Left" TextChanged="TxtName_TextChanged" />
             </Grid>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
@@ -34,7 +34,7 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0" Content="Surname" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" />
-                <TextBox Grid.Column="1" Name="TxtSurname" Text="{Binding Surname}" MinWidth="200" Height="10" Margin="10" HorizontalAlignment="Left" TextChanged="TxtSurname_TextChanged" />
+                <TextBox Grid.Column="1" Name="TxtSurname" Text="{Binding surname}" MinWidth="200" Height="10" Margin="10" HorizontalAlignment="Left" TextChanged="TxtSurname_TextChanged" />
             </Grid>
         </Grid>
         <Grid Grid.Row="2" HorizontalAlignment="Right">

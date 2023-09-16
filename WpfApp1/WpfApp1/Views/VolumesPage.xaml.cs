@@ -46,7 +46,7 @@ namespace Library.Views
         private async Task GetDataAsync()
         {
             volumes = await volumeService.GetVolumesAsync();
-            DgVolumes.ItemsSource = volumes.Volumes;
+            DgVolumes.ItemsSource = volumes.volumes;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

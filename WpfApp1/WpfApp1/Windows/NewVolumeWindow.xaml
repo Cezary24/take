@@ -34,7 +34,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Author" Margin="10,0,10,0" HorizontalAlignment="Right" />
-                <TextBox x:Name="TxtAuthor" Grid.Column="1" Margin="0,0,20,0" Text="{Binding Author}" TextChanged="TxtAuthor_TextChanged" />
+                <TextBox x:Name="TxtAuthor" Grid.Column="1" Margin="0,0,20,0" Text="{Binding author}" TextChanged="TxtAuthor_TextChanged" />
             </Grid>
 
             <Grid Grid.Row="1" Margin="0,10,0,0">
@@ -44,7 +44,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Publ. Date" Margin="10,0,10,0" HorizontalAlignment="Right" />
-                <DatePicker x:Name="TxtPublicationDate" Grid.Column="1" Margin="0,0,20,0" Text="{Binding PublicationDate}" SelectedDateChanged="TxtPublicationDate_TextChanged" />
+                <DatePicker x:Name="TxtPublicationDate" Grid.Column="1" Margin="0,0,20,0" Text="{Binding publicationDate}" SelectedDateChanged="TxtPublicationDate_TextChanged" />
             </Grid>
 
             <Grid Grid.Row="2" Margin="0,10,0,0">
@@ -54,7 +54,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Publ. House" Margin="10,0,10,0" HorizontalAlignment="Right" />
-                <DatePicker x:Name="TxtPublishingHouse" Grid.Column="1" Margin="0,0,20,0" Text="{Binding PublishingHouse}" SelectedDateChanged="TxtPublishingHouse_TextChanged" />
+                <DatePicker x:Name="TxtPublishingHouse" Grid.Column="1" Margin="0,0,20,0" Text="{Binding publishingHouse}" SelectedDateChanged="TxtPublishingHouse_TextChanged" />
             </Grid>
 
 
@@ -67,7 +67,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Title" Margin="10,0,10,0" HorizontalAlignment="Right" />
-                <ComboBox Grid.Column="1" x:Name="TxtTitle"  Margin="0,0,5,0" Text="{Binding Title}" SelectionChanged="Title_SelectionChanged" />
+                <ComboBox Grid.Column="1" x:Name="TxtTitle"  Margin="0,0,5,0" Text="{Binding title}" SelectionChanged="Title_SelectionChanged" />
                 <Label Grid.Column="2" Name="LblNewCompany" Cursor="Hand" FontWeight="SemiBold" Foreground="Green" Content="New" Margin="0,0,20,0" MouseLeftButtonDown="LblNewTitle_MouseLeftButtonDown" />
             </Grid>
 

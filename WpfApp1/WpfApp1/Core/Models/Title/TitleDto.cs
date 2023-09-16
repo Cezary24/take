@@ -11,9 +11,9 @@ namespace Library.Core.Models.Title
     public class TitleDto
     {
 
-        public long Id { get; set; }
-        public String Name { get; set; }
+        public long id { get; set; }
+        public String name { get; set; }
 
-        public VolumesDto Volumes { get; set; }
+        public VolumesDto volumes { get; set; }
     }
 }

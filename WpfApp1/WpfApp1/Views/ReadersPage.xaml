@@ -30,9 +30,9 @@
                 <DataGrid x:Name="DgReaders" AutoGenerateColumns="False" Margin="30,10,30,10" IsReadOnly="True"
                        Height="280" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"  >
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Name" MinWidth="100" Binding="{Binding Name}"/>
-                        <DataGridTextColumn Header="Surname" Binding="{Binding Surname}"/>
-                        <DataGridTextColumn Header="Rentals" Binding="{Binding Rentals}"/>
+                        <DataGridTextColumn Header="Name" MinWidth="100" Binding="{Binding name}"/>
+                        <DataGridTextColumn Header="Surname" Binding="{Binding surname}"/>
+                        <DataGridTextColumn Header="Rentals" Binding="{Binding rentals}"/>
 
                     </DataGrid.Columns>
                 </DataGrid>

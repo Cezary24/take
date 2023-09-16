@@ -11,11 +11,11 @@ namespace Library.Core.Models.Volume
 {
     public  class VolumeDto
     {
-        public long Id { get; set; }
-        public String Author { get; set; }
-        public DateTime PublicationDate { get; set; }
-        public DateTime PublishingHouse { get; set; }
-        public RentalsDto Rentals { get; set; }
-        public TitleDto Title { get; set; }
+        public long id { get; set; }
+        public String author { get; set; }
+        public DateTime publicationDate { get; set; }
+        public DateTime publishingHouse { get; set; }
+        public RentalsDto rentals { get; set; }
+        public TitleDto title { get; set; }
     }
 }

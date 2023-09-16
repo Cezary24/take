@@ -9,6 +9,6 @@ namespace Library.Core.Models.Title
 {
     public class TitlesDto
     {
-        public List<TitleDto> Titles { get; set; }
+        public List<TitleDto> titles { get; set; }
     }
 }

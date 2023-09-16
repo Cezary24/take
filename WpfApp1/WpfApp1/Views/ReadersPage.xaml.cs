@@ -41,7 +41,7 @@ namespace Library.Views
         private async Task GetDataAsync()
         {
             readers = await readerService.GetReadersAsync();
-            DgReaders.ItemsSource = readers.Readers;
+            DgReaders.ItemsSource = readers.readers;
         }
 
         private async void BtnNewReader_Click(object sender, RoutedEventArgs e)

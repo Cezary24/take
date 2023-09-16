@@ -9,8 +9,8 @@ namespace Library.Core.Models.Reader
 {
     public class NewReaderDto
     {
-        public String Name { get; set; }
-        public String Surname { get; set; }
-        public RentalsDto Rentals { get; set; }
+        public String name { get; set; }
+        public String surname { get; set; }
+        public RentalsDto rentals { get; set; }
     }
 }

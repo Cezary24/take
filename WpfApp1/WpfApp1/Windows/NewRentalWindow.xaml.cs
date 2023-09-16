@@ -85,14 +85,14 @@ namespace Library.Windows
            var reader = await readerService.GetReaderByIndex(readerId.Text);
 
 
-            reader.Rentals.Rentals.Add(rental);
+            reader.rentals.rentals.Add(rental);
 
             var newRental = new NewRentalDto
             {
-                DeliveryDate = rental.DeliveryDate,
-                Reader = reader,
-                RentalDate = rental.RentalDate,
-                Volume = CbVolumes.SelectedItem as VolumeDto
+                deliveryDate = rental.deliveryDate,
+                reader = reader,
+                rentalDate = rental.rentalDate,
+                volume = CbVolumes.SelectedItem as VolumeDto
                 
 
             };

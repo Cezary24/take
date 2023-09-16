@@ -12,14 +12,14 @@ namespace Library.Core.Models.Reader
     public class ReaderDto
     {
 
-        public long Id { get; set; }
-        public String Name { get; set; }
-        public String Surname { get; set; }
-        public RentalsDto Rentals { get; set; }
+        public long id { get; set; }
+        public String name { get; set; }
+        public String surname { get; set; }
+        public RentalsDto rentals { get; set; }
 
         public override string ToString()
         {
-            return Name;
+            return name;
         }
     }
 }

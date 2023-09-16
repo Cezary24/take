@@ -69,7 +69,7 @@ namespace Library.Windows
 
         private async void BtnSave_Click(object sender, RoutedEventArgs e)
         {
-            this.volumeService.deleteVolumeByIdAsync((CbVolumes.SelectedItem as VolumeDto).Id.ToString());
+            this.volumeService.deleteVolumeByIdAsync((CbVolumes.SelectedItem as VolumeDto).id.ToString());
             CleanControls();
             Hide();
         }

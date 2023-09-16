@@ -9,6 +9,6 @@ namespace Library.Core.Models.Volume
 {
     public class VolumesDto
     {
-        public List<VolumeDto> Volumes { get; set; }
+        public List<VolumeDto> volumes { get; set; }
     }
 }
