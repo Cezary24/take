@@ -34,6 +34,7 @@ namespace Library.Windows
         {
             this.titleService = titleService;
             InitializeComponent();
+            title = new NewTitleDto();
         }
 
         private void TxtName_TextChanged(object sender, TextChangedEventArgs e)

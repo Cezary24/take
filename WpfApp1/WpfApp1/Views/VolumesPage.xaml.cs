@@ -40,7 +40,8 @@ namespace Library.Views
             this.volumeWindow = volumeWindow;
             this.deleteWindow = deleteWindow;
          
-            InitializeComponent(); 
+            InitializeComponent();
+            volumes = new VolumesDto();
         }
 
         private async Task GetDataAsync()

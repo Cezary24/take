@@ -34,6 +34,7 @@ namespace Library.Views
             this.readerService = readerService;
             this.readerWindow = readerWindow;
             InitializeComponent();
+            readers = new ReadersDto();
             DataContext = this;
         }
 
