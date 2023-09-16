@@ -1,4 +1,6 @@
-﻿using Library.Services.Interfaces;
+﻿using Library.Core.Models.Rental;
+using Library.Core.Models.Volume;
+using Library.Services.Interfaces;
 using Library.Services.Web;
 using Library.Windows.Interfaces;
 using System;
@@ -25,7 +27,7 @@ namespace Library.Windows
     public partial class NewRentalWindow : Window, IRentalWindow
     {
 
-        private long volumeId;
+        private RentalDto rental;
        private readonly IVolumeService volumeService;
         private readonly IReaderService readerService;
       //  private readonly IRentalWindow rentalWindow;
@@ -33,14 +35,20 @@ namespace Library.Windows
         {
            this.volumeService = volumeService;
             this.readerService = readerService;
-          //  this.rentalWindow = rentalWindow;
+            //  this.rentalWindow = rentalWindow;
+            rental = new RentalDto();
             InitializeComponent();
         }
 
         private async void Window_Initialized(object sender, EventArgs e)
         {
-           
-           
+
+            await GetVolumesAsync();
+        }
+
+        private async Task GetVolumesAsync()
+        {
+            CbRentals.ItemsSource = (System.Collections.IEnumerable)await volumeService.GetVolumesAsync();
         }
 
         public void SetReaderIndex(string index)
@@ -69,7 +77,14 @@ namespace Library.Windows
 
         private async void BtnSave_Click(object sender, RoutedEventArgs e)
         {
-           // await volumeService.AddVolumeAsync(volume);
+
+           var reader = await readerService.GetReaderByIndex(readerId.Text);
+
+           
+                reader.Rentals.Rentals.push(volume)
+                await volumeService.AddVolumeAsync(volume);
+            
+           
             CleanControls();
             Hide();
         }
