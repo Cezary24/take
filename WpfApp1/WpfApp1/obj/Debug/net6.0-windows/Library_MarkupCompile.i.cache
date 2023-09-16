@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\App.xaml
-13-755912889
+14-1823429427
 
-48-1834453843
+50-1947471881
 2261782211702
-MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ReadersPage.xaml;Views\ShellWindow.xaml;Views\VolumesPage.xaml;Windows\DeleteVolumeWindow.xaml;Windows\NewReaderWindow.xaml;Windows\NewRentalWindow.xaml;Windows\NewTitleWindow.xaml;Windows\NewVolumeWindow.xaml;
+MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ReadersPage.xaml;Views\ShellWindow.xaml;Views\VolumesPage.xaml;Windows\DeleteVolumeWindow.xaml;Windows\NewReaderWindow.xaml;Windows\NewRentalWindow.xaml;Windows\NewTitleWindow.xaml;Windows\NewVolumeWindow.xaml;Windows\VolumeReturningWindow.xaml;
 
-False
+True
 

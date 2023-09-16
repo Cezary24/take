@@ -31,6 +31,9 @@
     <Compile Update="Windows\NewVolumeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\VolumeReturningWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -70,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\NewVolumeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\VolumeReturningWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

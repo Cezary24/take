@@ -93,3 +93,5 @@ D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\NewRentalWindow.baml
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\DeleteVolumeWindow.g.cs
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\DeleteVolumeWindow.baml
+D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\VolumeReturningWindow.g.cs
+D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\Windows\VolumeReturningWindow.baml

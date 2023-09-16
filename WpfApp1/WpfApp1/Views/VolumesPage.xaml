@@ -70,9 +70,10 @@
             <Grid Grid.Row="2">
                 <Label HorizontalAlignment="Center" Name="LblAllStudents" />
             </Grid>
-            <Grid Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,400,10" Grid.RowSpan="2">
+            <Grid Grid.Row="2" HorizontalAlignment="Right" Margin="0,5,153,5" Grid.RowSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -80,6 +81,7 @@
                 <Button Grid.Column="1" Content="Add new volume" Name="BtnNewVolume" FontSize="12" FontWeight="SemiBold" Cursor="Hand" Margin="10,10,10,10" Click="BtnAddVolume_Click" />
                 <Button Grid.Column="2" Content="Retal volume" Name="BtnAddReval"  FontSize="12" FontWeight="SemiBold" Cursor="Hand" Margin="10,10,10,10" Click="BtnAddReval_Click" />
                 <Button Grid.Column="3" Content="delete volume" Name="BtnDeleteVolume"  FontSize="12" FontWeight="SemiBold" Cursor="Hand" Margin="10,10,10,10" Click="BtnDeleteVolume_Click" />
+                <Button Grid.Column="4" Content="return volume" Name="BtnReturnVolume"  FontSize="12" FontWeight="SemiBold" Cursor="Hand" Margin="10,10,10,10" Click="BtnReturnVolume_Click" />
             </Grid>
         </Grid>
     </Grid>

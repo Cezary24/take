@@ -32,13 +32,15 @@ namespace Library.Views
         private readonly IVolumeWindow volumeWindow;
         private readonly IDeleteWindow deleteWindow;
         private readonly IRentalWindow retalWindow;
+        private readonly IVolumeReturningWindow volumeReturningWindow;
 
-        public VolumesPage(IVolumeService volumeService, IVolumeWindow volumeWindow, IRentalWindow retalWindow, IDeleteWindow deleteWindow)
+        public VolumesPage(IVolumeService volumeService, IVolumeWindow volumeWindow, IRentalWindow retalWindow, IDeleteWindow deleteWindow, IVolumeReturningWindow volumeReturningWindow)
         {
             this.retalWindow = retalWindow;
             this.volumeService = volumeService;
             this.volumeWindow = volumeWindow;
             this.deleteWindow = deleteWindow;
+            this.volumeReturningWindow = volumeReturningWindow;
          
             InitializeComponent();
             volumes = new VolumesDto();
@@ -67,6 +69,14 @@ namespace Library.Views
             await GetDataAsync();
         }
 
+        
+
+
+             private async void BtnReturnVolume_Click(object sender, RoutedEventArgs e)
+        {
+            volumeReturningWindow.ShowDialog();
+            await GetDataAsync();
+        }
         private async void BtnDeleteVolume_Click(object sender, RoutedEventArgs e)
         {
             deleteWindow.ShowDialog();
