@@ -22,7 +22,7 @@ namespace Library.Services.Web
         public RentalService(IConfiguration configuration, IRestClient restClient)
         {
             this.restClient = restClient;
-            url = "rental-service";
+            url = "http://localhost:8080/rental";
         }
 
         public async Task<RentalDto> AddRentalAsync(NewRentalDto reader)

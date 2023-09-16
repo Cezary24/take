@@ -1,4 +1,9 @@
-﻿using System;
+﻿using Library.Core.Models.Reader;
+using Library.Core.Models.Volume;
+using Library.Services.Interfaces;
+using Library.Services.Web;
+using Library.Windows.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +25,44 @@ namespace Library.Views
     /// </summary>
     public partial class VolumesPage : Page
     {
-       public VolumesPage()
+
+
+        private VolumesDto volumes;
+        private readonly IVolumeService volumeService;
+        private readonly IVolumeWindow volumeWindow;
+
+        public VolumesPage(IVolumeService volumeService, IVolumeWindow volumeWindow)
         {
-            InitializeComponent();
+            this.volumeService = volumeService;
+            this.volumeWindow = volumeWindow;
+            InitializeComponent(); 
+        }
+
+        private async Task GetDataAsync()
+        {
+            volumes = await volumeService.GetVolumesAsync();
+            DgVolumes.ItemsSource = volumes.Volumes;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private async void BtnAddVolume_Click(object sender, RoutedEventArgs e)
+        {
+            volumeWindow.ShowDialog();
+            await GetDataAsync();
+        }
+
+        private async void Page_Initialized(object sender, System.EventArgs e)
+        {
+            await GetDataAsync();
+        }
+
+        private void DgStudents_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

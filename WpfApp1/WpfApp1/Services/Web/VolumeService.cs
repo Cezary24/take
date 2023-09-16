@@ -23,7 +23,7 @@ namespace Library.Services.Web
         public VolumeService(IConfiguration configuration, IRestClient restClient)
         {
             this.restClient = restClient;
-            url = "volume-service";
+            url = "http://localhost:8080/volume";
         }
 
         public async Task<VolumeDto> AddVolumeAsync(NewVolumeDto reader)

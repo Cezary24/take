@@ -4,6 +4,7 @@ using Library.Windows.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,15 +26,33 @@ namespace Library.Views
     {
 
         private ReadersDto readers;
-        private readonly IRentalService rentalService;
+        private readonly IReaderService readerService;
         private readonly IReaderWindow readerWindow;
 
-        public ReadersPage(IRentalService rentalService, IReaderWindow readerWindow)
+        public ReadersPage(IReaderService readerService, IReaderWindow readerWindow)
         {
-            this.rentalService = rentalService;
+            this.readerService = readerService;
             this.readerWindow = readerWindow;
             InitializeComponent();
             DataContext = this;
+        }
+
+
+        private async Task GetDataAsync()
+        {
+            readers = await readerService.GetReadersAsync();
+            DgReaders.ItemsSource = readers.Readers;
+        }
+
+        private async void BtnNewReader_Click(object sender, RoutedEventArgs e)
+        {
+            readerWindow.ShowDialog();
+            await GetDataAsync();
+        }
+
+        private async void Page_Initialized(object sender, System.EventArgs e)
+        {
+            await GetDataAsync();
         }
     }
 }

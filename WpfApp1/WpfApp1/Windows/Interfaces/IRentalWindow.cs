@@ -1,6 +1,6 @@
 ﻿namespace Library.Windows.Interfaces
 {
-    public interface IRentalpWindow
+    public interface IRentalWindow
     {
         bool? ShowDialog();
         void SetReaderIndex(string index);

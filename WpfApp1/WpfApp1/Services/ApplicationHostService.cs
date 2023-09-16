@@ -7,6 +7,8 @@ using Microsoft.Extensions.Hosting;
 using Library.Contracts.Activation;
 using Library.Contracts.Services;
 using Library.Contracts.Views;
+using WpfApp1;
+using Library.Views;
 
 namespace StudentInternship.Services
 {
@@ -69,7 +71,7 @@ namespace StudentInternship.Services
 
             await Task.CompletedTask;
 
-       /*     if (App.Current.Windows.OfType<IShellWindow>().Count() == 0)
+            if (App.Current.Windows.OfType<IShellWindow>().Count() == 0)
             {
                 // Default activation that navigates to the apps default page
                 _shellWindow = _serviceProvider.GetService(typeof(IShellWindow)) as IShellWindow;
@@ -77,7 +79,7 @@ namespace StudentInternship.Services
                 _shellWindow.ShowWindow();
                 _navigationService.NavigateTo(typeof(VolumesPage));
                 await Task.CompletedTask;
-            }*/
+            }
         }
     }
 }

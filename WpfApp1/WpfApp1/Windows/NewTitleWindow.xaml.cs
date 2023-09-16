@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Windows.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,16 @@ namespace Library.Windows
     /// <summary>
     /// Interaction logic for NewTitleWindow.xaml
     /// </summary>
-    public partial class NewTitleWindow : Page
+    public partial class NewTitleWindow : Page, ITitleWindow
     {
         public NewTitleWindow()
         {
             InitializeComponent();
+        }
+
+        public bool? ShowDialog()
+        {
+            throw new NotImplementedException();
         }
     }
 }

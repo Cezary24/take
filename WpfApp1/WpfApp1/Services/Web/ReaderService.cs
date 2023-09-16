@@ -23,7 +23,7 @@ namespace Library.Services.Web
         public ReaderService(IConfiguration configuration, IRestClient restClient)
         {
             this.restClient = restClient;
-            url = "reader-service";
+            url = "http://localhost:8080/reader";
         }
 
         public async Task<ReaderDto> AddReaderAsync(NewReaderDto reader)

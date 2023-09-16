@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\App.xaml
-12-1822021301
+11-482275639
 
-44-1127022164
-206-1067174550
-MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ReadersPage.xaml;Views\ShellWindow.xaml;Views\VolumesPage.xaml;Windows\NewReaderWindow.xaml;Windows\NewRentalWindow.xaml;Windows\NewTitleWindow.xaml;Windows\NewVolumeTitle.xaml;
+43-355453694
+2261782211702
+MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ReadersPage.xaml;Views\ShellWindow.xaml;Views\VolumesPage.xaml;Windows\NewReaderWindow.xaml;Windows\NewTitleWindow.xaml;Windows\NewVolumeWindow.xaml;
 
 False
 

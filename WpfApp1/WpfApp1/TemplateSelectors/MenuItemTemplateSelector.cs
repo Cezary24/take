@@ -3,7 +3,7 @@ using System.Windows.Controls;
 
 using MahApps.Metro.Controls;
 
-namespace StudentInternship.TemplateSelectors
+namespace Library.TemplateSelectors
 {
     public class MenuItemTemplateSelector : DataTemplateSelector
     {

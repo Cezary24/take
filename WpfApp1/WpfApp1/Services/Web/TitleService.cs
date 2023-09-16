@@ -25,7 +25,7 @@ namespace Library.Services.Web
         public TitleService(IConfiguration configuration, IRestClient restClient)
         {
             this.restClient = restClient;
-            url = "title-service";
+            url = "http://localhost:8080/title";
         }
 
         public async Task<TitleDto> AddTitleAsync(NewTitleDto title)

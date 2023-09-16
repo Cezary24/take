@@ -48,15 +48,14 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    <Label Grid.Column="0" HorizontalAlignment="Center" Name="LblStudentsWithApprovedInternshipButNotFinished" />
-                    <Label Grid.Column="1" HorizontalAlignment="Center" Name="LblStudentsWithFinishedInternship" />
+
                 </Grid>
             </Grid>
 
 
             <Grid Grid.Row="1">
-                <DataGrid x:Name="DgStudents" AutoGenerateColumns="False" Margin="30,10,30,10" IsReadOnly="True"
-                       Height="220" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"  >
+                <DataGrid x:Name="DgVolumes" AutoGenerateColumns="False" Margin="30,10,30,10" IsReadOnly="True"
+                       Height="220" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"   >
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Author" Binding="{Binding Author}"/>
                         <DataGridTextColumn Header="Publication Date " Binding="{Binding PublicationDate}"/>
@@ -71,17 +70,16 @@
             <Grid Grid.Row="2">
                 <Label HorizontalAlignment="Center" Name="LblAllStudents" />
             </Grid>
-            <Grid Grid.Row="3" HorizontalAlignment="Right">
+            <Grid Grid.Row="1" HorizontalAlignment="Right">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition />
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Content="Add new volume" Name="BtnAddStudent" FontSize="12" FontWeight="SemiBold" Cursor="Hand" Margin="10,10,10,10"  />
-              
+                <Button Grid.Column="1" Content="Add new book" Name="BtnNewOffer" FontSize="12" FontWeight="SemiBold" Cursor="Hand" Margin="10,10,10,10" Click="BtnAddVolume_Click" />
+
             </Grid>
-            <TextBox HorizontalAlignment="Left" Margin="711,10,0,0" TextWrapping="Wrap" Text="Volumes" VerticalAlignment="Top" Width="57" TextChanged="TextBox_TextChanged" RenderTransformOrigin="-0.122,0.668" Grid.Row="1"/>
         </Grid>
     </Grid>
 </Page>
