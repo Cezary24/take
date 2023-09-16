@@ -28,8 +28,10 @@ namespace Library.Windows
     {
 
         private RentalDto rental;
+        private VolumeDto volume;
        private readonly IVolumeService volumeService;
         private readonly IReaderService readerService;
+        private readonly IRentalService rentalService;
       //  private readonly IRentalWindow rentalWindow;
         public NewRentalWindow(IVolumeService volumeService, IReaderService readerService)
         {
@@ -37,6 +39,7 @@ namespace Library.Windows
             this.readerService = readerService;
             //  this.rentalWindow = rentalWindow;
             rental = new RentalDto();
+            volume = new VolumeDto();
             InitializeComponent();
         }
 
@@ -48,7 +51,7 @@ namespace Library.Windows
 
         private async Task GetVolumesAsync()
         {
-            CbRentals.ItemsSource = (System.Collections.IEnumerable)await volumeService.GetVolumesAsync();
+            CbVolumes.ItemsSource = (System.Collections.IEnumerable)await volumeService.GetVolumesAsync();
         }
 
         public void SetReaderIndex(string index)
@@ -58,14 +61,15 @@ namespace Library.Windows
 
         
 
-        private void CbRentals_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        private void CbVolumes_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
+            
             SetButtonEnabled();
         }
 
         private void SetButtonEnabled()
         {
-            if (CbRentals.SelectedIndex != -1 && !string.IsNullOrEmpty(readerId.Text))
+            if (CbVolumes.SelectedIndex != -1 && !string.IsNullOrEmpty(readerId.Text))
                 BtnSave.IsEnabled = true;
         }
 
@@ -80,9 +84,20 @@ namespace Library.Windows
 
            var reader = await readerService.GetReaderByIndex(readerId.Text);
 
-           
-                reader.Rentals.Rentals.push(volume)
-                await volumeService.AddVolumeAsync(volume);
+
+            reader.Rentals.Rentals.Add(rental);
+
+            var newRental = new NewRentalDto
+            {
+                DeliveryDate = rental.DeliveryDate,
+                Reader = reader,
+                RentalDate = rental.RentalDate,
+                Volume = CbVolumes.SelectedItem as VolumeDto
+                
+
+            };
+
+            await rentalService.AddRentalAsync(newRental);
             
            
             CleanControls();
@@ -97,7 +112,7 @@ namespace Library.Windows
 
         private void CleanControls()
         {
-            if (CbRentals.SelectedIndex != -1)
+            if (CbVolumes.SelectedIndex != -1)
                 BtnSave.IsEnabled = true;
 
         }
