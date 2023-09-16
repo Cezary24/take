@@ -30,13 +30,15 @@ namespace Library.Views
         private VolumesDto volumes;
         private readonly IVolumeService volumeService;
         private readonly IVolumeWindow volumeWindow;
+        private readonly IDeleteWindow deleteWindow;
         private readonly IRentalWindow retalWindow;
 
-        public VolumesPage(IVolumeService volumeService, IVolumeWindow volumeWindow, IRentalWindow retalWindow)
+        public VolumesPage(IVolumeService volumeService, IVolumeWindow volumeWindow, IRentalWindow retalWindow, IDeleteWindow deleteWindow)
         {
             this.retalWindow = retalWindow;
             this.volumeService = volumeService;
             this.volumeWindow = volumeWindow;
+            this.deleteWindow = deleteWindow;
          
             InitializeComponent(); 
         }
@@ -66,7 +68,7 @@ namespace Library.Views
 
         private async void BtnDeleteVolume_Click(object sender, RoutedEventArgs e)
         {
-            volumeWindow.ShowDialog();
+            deleteWindow.ShowDialog();
             await GetDataAsync();
         }
 

@@ -16,6 +16,9 @@
     <Compile Update="Views\VolumesPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\DeleteVolumeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\NewReaderWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\VolumesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\DeleteVolumeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\NewReaderWindow.xaml">

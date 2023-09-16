@@ -63,5 +63,11 @@ namespace Library.Services.Web
 
             return volumes;
         }
+
+        public async Task deleteVolumeByIdAsync(string volumeId)
+        {
+            using var client = new HttpClient();
+            await client.DeleteAsync($"{url}{volumeId}");
+        }
     }
 }

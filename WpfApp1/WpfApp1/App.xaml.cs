@@ -93,6 +93,7 @@ namespace WpfApp1
            services.AddTransient<IRentalWindow, NewRentalWindow>();
             services.AddTransient<ITitleWindow, NewTitleWindow>();
             services.AddTransient<IVolumeWindow, NewVolumeWindow>();
+            services.AddTransient<IDeleteWindow, DeleteVolumeWindow>();
         }
 
         private async void OnExit(object sender, ExitEventArgs e)

@@ -13,5 +13,7 @@ namespace Library.Services.Interfaces
         Task<VolumeDto> AddVolumeAsync(NewVolumeDto reader);
         Task<VolumesDto> GetVolumesAsync();
         Task<VolumeDto> GetVolumeById(long volumeId);
+
+        Task deleteVolumeByIdAsync(string volumeId);
     }
 }
