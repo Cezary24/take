@@ -15,7 +15,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Library.Services.Web
 {
-    class VolumeService : IVolumeService
+    public class VolumeService : IVolumeService
     {
         private readonly string url;
         private readonly IRestClient restClient;

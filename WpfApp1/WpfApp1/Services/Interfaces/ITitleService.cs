@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Services.Interfaces
 {
-    interface ITitleService
+    public interface ITitleService
     {
         Task<TitleDto> AddTitleAsync(NewTitleDto title);
         Task<TitleDto> GetTitleById(long titleId);

@@ -15,7 +15,7 @@ using System.ComponentModel.Design;
 
 namespace Library.Services.Web
 {
-    class ReaderService : IReaderService
+    public class ReaderService : IReaderService
     {
         private readonly string url;
         private readonly IRestClient restClient;

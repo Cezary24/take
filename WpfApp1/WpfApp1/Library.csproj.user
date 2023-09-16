@@ -7,10 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\Volume.xaml.cs">
+    <Compile Update="Views\ReadersPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Readers.xaml.cs">
+    <Compile Update="Views\VolumesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\NewRentalWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\NewReaderWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\NewTitleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\NewVolumeTitle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,10 +42,22 @@
     <Page Update="Styles\_Thickness.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Volume.xaml">
+    <Page Update="Views\ReadersPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Readers.xaml">
+    <Page Update="Views\VolumesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\NewRentalWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\NewReaderWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\NewTitleWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\NewVolumeTitle.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

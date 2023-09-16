@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Library.Services.Web
 {
-    class RentalService : IRentalService
+   public class RentalService : IRentalService
     {
         private readonly string url;
         private readonly IRestClient restClient;

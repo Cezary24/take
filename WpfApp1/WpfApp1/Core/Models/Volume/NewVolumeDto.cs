@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Volume
 {
-    class NewVolumeDto
+    public class NewVolumeDto
     {
         public String Author { get; set; }
         public DateTime PublicationDate { get; set; }

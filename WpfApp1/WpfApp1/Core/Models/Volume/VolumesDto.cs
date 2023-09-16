@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Volume
 {
-    class VolumesDto
+    public class VolumesDto
     {
         public List<VolumeDto> Volumes { get; set; }
     }

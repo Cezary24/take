@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\
+D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\obj\Debug\net6.0-windows\
 Library
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Programowanie\Nauka\C#\WpfApp1\WpfApp1\App.xaml
-71618783749
+D:\Programowanie\Nauka\C#\take\WpfApp1\WpfApp1\App.xaml
+11-1746253601
 
-40648070749
-201-1503429771
-MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\Readers.xaml;Views\Volume.xaml;
+45-832689715
+206-1067174550
+MainWindow.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ReadersPage.xaml;Views\VolumesPage.xaml;Windows\NewReaderWindow.xaml;Windows\NewRentalWindow.xaml;Windows\NewTitleWindow.xaml;Windows\NewVolumeTitle.xaml;
 
-False
+True
 

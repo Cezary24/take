@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Services.Interfaces
 {
-    interface IReaderService
+    public interface IReaderService
     {
 
         Task<ReaderDto> AddReaderAsync(NewReaderDto reader);

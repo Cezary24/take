@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Rental
 {
-    class NewRentalDto
+    public class NewRentalDto
     {
 
         public DateTime RentalDate { get; set; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Volume
 {
-    class VolumeDto
+    public  class VolumeDto
     {
         public long Id { get; set; }
         public String Author { get; set; }

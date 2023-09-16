@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Reader
 {
-    class ReadersDto
+    public class ReadersDto
     {
         public List<ReaderDto> Readers { get; set; }
     }

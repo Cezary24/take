@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Library.Services.Interfaces
 {
-    interface IVolumeService
+    public interface IVolumeService
     {
         Task<VolumeDto> AddVolumeAsync(NewVolumeDto reader);
         Task<VolumesDto> GetVolumesAsync();

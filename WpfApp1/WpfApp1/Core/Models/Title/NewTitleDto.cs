@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Title
 {
-    class NewTitleDto
+    public class NewTitleDto
     {
         public String Name { get; set; }
 

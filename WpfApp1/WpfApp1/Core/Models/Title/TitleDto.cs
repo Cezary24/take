@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Title
 {
-    class TitleDto
+    public class TitleDto
     {
 
         public long Id { get; set; }

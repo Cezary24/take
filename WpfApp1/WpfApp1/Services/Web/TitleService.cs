@@ -15,7 +15,7 @@ using Library.Core.Models.Rental;
 
 namespace Library.Services.Web
 {
-    class TitleService : ITitleService
+    public class TitleService : ITitleService
     {
 
 

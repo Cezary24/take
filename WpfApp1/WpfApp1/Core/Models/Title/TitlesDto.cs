@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Title
 {
-    class TitlesDto
+    public class TitlesDto
     {
         public List<TitleDto> Titles { get; set; }
     }

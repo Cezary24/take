@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Reader
 {
-    class NewReaderDto
+    public class NewReaderDto
     {
         public String Name { get; set; }
         public String Surname { get; set; }

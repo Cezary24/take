@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Services.Interfaces
 {
-    interface IRentalService
+    public interface IRentalService
     {
 
         Task<RentalDto> AddRentalAsync(NewRentalDto rental);

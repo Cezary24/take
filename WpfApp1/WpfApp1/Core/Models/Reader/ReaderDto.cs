@@ -9,7 +9,7 @@ using System.Xml.Linq;
 
 namespace Library.Core.Models.Reader
 {
-    class ReaderDto
+    public class ReaderDto
     {
 
         public long Id { get; set; }

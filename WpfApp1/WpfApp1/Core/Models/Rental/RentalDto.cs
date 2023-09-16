@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Library.Core.Models.Rental
 {
-    class RentalDto
+    public class RentalDto
     {
 
         public long Id { get; set; }
